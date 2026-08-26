@@ -5,88 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nil Viola - Oficial</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body {
-            background: #07070a;
-            color: #fff;
+            background-color: #07070a;
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             width: 100vw;
             padding: 20px;
-            position: relative;
-            overflow-x: hidden;
         }
-        /* Luz dourada celestial ao fundo */
-        .bg-glow {
-            position: absolute; width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, rgba(0,0,0,0) 70%);
-            top: 20%; left: 50%; transform: translateX(-50%); filter: blur(60px); z-index: 1;
-        }
-        .container {
+        .painel {
             text-align: center;
-            z-index: 2;
-            background: rgba(20, 20, 28, 0.75);
+            background: #14141c;
             padding: 40px 30px;
-            border-radius: 28px;
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.7);
-            max-width: 420px; width: 100%;
+            border-radius: 24px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 400px; 
+            width: 100%;
         }
-        /* Foto estilizada com borda dourada */
-        .artist-img {
-            width: 140px; height: 140px;
+        .foto-perfil {
+            width: 130px; 
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #d4af37;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
-        h1 { font-size: 2rem; letter-spacing: 1px; color: #fff; margin-bottom: 6px; font-weight: 700; }
-        .genre { color: #d4af37; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 35px; }
+        h1 { font-size: 1.8rem; color: #ffffff; margin-bottom: 8px; }
+        .estilo { color: #d4af37; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 30px; font-weight: bold; }
         
-        /* Grid corrigido e responsivo para celulares */
-        .links-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .bloco-botoes {
+            display: flex;
+            justify-content: space-between;
             gap: 15px;
             width: 100%;
         }
-        .btn-link {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 24px 10px;
-            border-radius: 18px;
+        .botao-musica {
+            flex: 1;
+            display: block;
+            padding: 20px 10px;
+            border-radius: 14px;
             text-decoration: none;
-            color: #fff;
+            color: #ffffff;
             font-weight: bold;
             font-size: 1rem;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
         }
-        /* Cores oficiais e vibrantes nos cliques */
-        .spotify { background: rgba(29, 185, 84, 0.12); border-color: rgba(29, 185, 84, 0.25); }
-        .spotify:hover { background: #1DB954; box-shadow: 0 0 20px rgba(29, 185, 84, 0.6); color: #000; }
-        
-        .youtube { background: rgba(255, 0, 0, 0.1); border-color: rgba(255, 0, 0, 0.25); }
-        .youtube:hover { background: #FF0000; box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); color: #fff; }
-        
-        .btn-link .icon { font-size: 1.8rem; margin-bottom: 10px; }
+        .cor-verde { background-color: #1DB954; color: #000000; }
+        .cor-vermelha { background-color: #FF0000; color: #ffffff; }
     </style>
 </head>
 <body>
-    <div class="bg-glow"></div>
-    <div class="container">
-        <!-- Imagem caipira/viola profissional de fundo para o topo -->
-        <img class="artist-img" src="https://unsplash.com" alt="Nil Viola">
+    <div class="painel">
+        <!-- Foto de uma viola caipira iluminada no estúdio -->
+        <img class="foto-perfil" src="https://unsplash.com" alt="Nil Viola">
         
         <h1>Nil Viola</h1>
-        <div class="genre">Sertanejo Gospel</div>
+        <div class="estilo">SERTANEJO GOSPEL</div>
         
-        <div class="links-grid">
-            <!-- SEU LINK REAL DO SPOTIFY -->
-            <a href="
+        <div class="bloco-botoes">
+            <!-- Link Oficial do seu Perfil de Artista no Spotify -->
+            <a href="https://spotify.com" target="_blank" class="botao-musica cor-verde">
+                Spotify
+            </a>
+            <!-- Link Oficial do seu Perfil de Artista no YouTube Music -->
+            <a href="https://youtube.com" target="_blank" class="botao-musica cor-vermelha">
+                YouTube
+            </a>
+        </div>
+    </div>
+</body>
+</html>
