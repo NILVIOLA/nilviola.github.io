@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nil Viola - Oficial</title>
+    <style>
+        /* Estilo futurista estilo Linktree de DJ/Produtor */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        body {
+            background-color: #030303;
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(29, 185, 84, 0.05) 0%, transparent 50%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100vw;
+            padding: 24px;
+        }
+
+        .cartao-artista {
+            background: rgba(18, 18, 24, 0.7);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 40px 24px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 2px solid #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitulo {
+            font-size: 0.85rem;
+            color: #d4af37;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 32px;
+        }
+
+        .lista-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .link-plataforma {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            width: 100%;
+        }
+
+        .link-plataforma:active {
+            transform: scale(0.98);
+        }
+
+        /* Botão Spotify Futurista */
+        .bt-spotify {
+            background: #1DB954;
+            color: #000000;
+            box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+        }
+
+        /* Botão YouTube Music Futurista */
+        .bt-youtube {
+            background: #FF0000;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .icone {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao-artista">
+        <!-- Imagem padrão profissional de Viola caipira no estúdio -->
+        <img class="avatar" src="https://unsplash.com" alt="Nil Viola">
+        
+        <h1>Nil Viola</h1>
+        <div class="subtitulo">Sertanejo Gospel</div>
+        
+        <div class="lista-links">
+            <!-- Link Direto e Real do seu Spotify de Artista -->
+            <a href="https://spotify.com" target="_blank" class="link-plataforma bt-spotify">
+                <span class="icone">🎵</span> Ouça no Spotify
+            </a>
+
+            <!-- Link Direto e Real do seu YouTube Music de Artista -->
+            <a href="https://youtube.com" target="_blank" class="link-plataforma bt-youtube">
+                <span class="icone">🎧</span> YouTube Music
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
