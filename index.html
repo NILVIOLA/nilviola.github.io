@@ -2,133 +2,128 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Nil Viola - Oficial</title>
     <style>
-        /* Estilo futurista estilo Linktree de DJ/Produtor */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        
-        body {
-            background-color: #030303;
-            background-image: 
-                radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 50% 80%, rgba(29, 185, 84, 0.05) 0%, transparent 50%);
+        /* Força o site a ocupar 100% da tela do celular sem cortar */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background-color: #0b0b12;
             color: #ffffff;
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+        }
+
+        /* Foto de uma linda viola caipira em alta definição cobrindo todo o fundo do site */
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            width: 100vw;
-            padding: 24px;
+            background-image: linear-gradient(rgba(11, 11, 18, 0.85), rgba(11, 11, 18, 0.95)), url('https://unsplash.com');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
 
-        .cartao-artista {
-            background: rgba(18, 18, 24, 0.7);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 40px 24px;
-            border-radius: 24px;
-            width: 100%;
-            max-width: 380px;
+        /* Painel centralizado que flutua elegantemente na tela */
+        .painel-artista {
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            background: rgba(22, 22, 32, 0.75);
+            padding: 45px 30px;
+            border-radius: 28px;
+            border: 2px solid #d4af37;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            width: 88%;
+            max-width: 380px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
         }
 
-        .avatar {
+        /* Ícone circular dourado decorativo */
+        .foto-perfil {
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            object-fit: cover;
             margin: 0 auto 20px auto;
-            border: 2px solid #d4af37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-            display: block;
+            border: 3px solid #d4af37;
+            background-color: #161620;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
         }
 
         h1 {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 4px;
-            letter-spacing: -0.5px;
+            margin-bottom: 6px;
         }
 
-        .subtitulo {
+        .estilo-musical {
             font-size: 0.85rem;
             color: #d4af37;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
         }
 
-        .lista-links {
+        /* Botões verticais grandes e fáceis de clicar no celular */
+        .bloco-links {
             display: flex;
             flex-direction: column;
             gap: 16px;
             width: 100%;
         }
 
-        .link-plataforma {
+        .botao-plataforma {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 16px;
+            padding: 16px 20px;
             border-radius: 14px;
             text-decoration: none;
             color: #ffffff;
             font-weight: 700;
-            font-size: 1rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            width: 100%;
+            font-size: 1.05rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .link-plataforma:active {
-            transform: scale(0.98);
-        }
-
-        /* Botão Spotify Futurista */
-        .bt-spotify {
-            background: #1DB954;
+        /* Cores vibrantes e oficiais */
+        .cor-spotify {
+            background-color: #1DB954;
             color: #000000;
-            box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+            box-shadow: 0 4px 20px rgba(29, 185, 84, 0.4);
         }
 
-        /* Botão YouTube Music Futurista */
-        .bt-youtube {
-            background: #FF0000;
+        .cor-youtube {
+            background-color: #FF0000;
             color: #ffffff;
-            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
         }
 
-        .icone {
-            margin-right: 10px;
-            font-size: 1.2rem;
+        .icone-emoji {
+            margin-right: 12px;
+            font-size: 1.3rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="cartao-artista">
-        <!-- Imagem padrão profissional de Viola caipira no estúdio -->
-        <img class="avatar" src="https://unsplash.com" alt="Nil Viola">
+    <div class="painel-artista">
+        <!-- Ícone representativo de música clássica/raiz -->
+        <div class="foto-perfil">🎸</div>
         
         <h1>Nil Viola</h1>
-        <div class="subtitulo">Sertanejo Gospel</div>
+        <div class="estilo-musical">Sertanejo Gospel</div>
         
-        <div class="lista-links">
-            <!-- Link Direto e Real do seu Spotify de Artista -->
-            <a href="https://spotify.com" target="_blank" class="link-plataforma bt-spotify">
-                <span class="icone">🎵</span> Ouça no Spotify
-            </a>
-
-            <!-- Link Direto e Real do seu YouTube Music de Artista -->
-            <a href="https://youtube.com" target="_blank" class="link-plataforma bt-youtube">
-                <span class="icone">🎧</span> YouTube Music
-            </a>
-        </div>
-    </div>
-
-</body>
-</html>
+        <div class="bloco-links">
+            <!-- LINK REAL E TRAVADO DO SEU SPOTIFY OFICIAL -->
+            <a href="
