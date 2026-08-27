@@ -1,50 +1,82 @@
 <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Nil Viola - Links Oficiais</title>
-     <style>
-         * {
-             margin: 0;
-             padding: 0;
-             box-sizing: border-box;
-         }
-         body {
-             /* Imagem de fundo: Sertão/Árvore/Entardecer - visual profissional e rústico */
-             background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), 
-                         url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat fixed;
-             min-height: 100vh;
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             font-family: 'Arial', sans-serif;
-         }
-         /* Apenas os botões/links */
-         a {
-             text-decoration: none;
-             font-size: 1.25rem;
-             font-weight: bold;
-             padding: 18px 40px;
-             margin: 12px 0;
-             border-radius: 12px;
-             color: #fff;
-             transition: transform 0.2s ease;
-         }
-         a:hover {
-             transform: scale(1.05);
-         }
-         .spotify {
-             background-color: #1DB954;
-         }
-         .youtube {
-             background-color: #FF0000;
-         }
-     </style>
- </head>
- <body>
-     <a href="https://open.spotify.com/intl-pt/artist/6yylUfu6eFugErm8OE9vh7" target="_blank" class="spotify">🎵 Ouvir no Spotify</a>
-     <a href="https://music.youtube.com/channel/UCPpBU0oGU5tQWkRxGYvsWyA" target="_blank" class="youtube">🎧 Ouvir no YouTube Music</a>
- </body>
- </html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nil Viola - Onde Ouvir</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), 
+                        url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .slogan {
+            color: #ffd700;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 17px 40px;
+            margin: 11px 0;
+            border-radius: 12px;
+            color: #fff;
+            width: 270px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.35);
+            transition: transform 0.25s ease;
+        }
+        a:hover { transform: translateY(-3px); }
+        /* Cores oficiais */
+        .spotify  { background: #1DB954; color: #000; }
+        .youtube  { background: #FF0000; }
+        .apple    { background: #FA243C; }
+        /* Ícones SVG ajustados */
+        .icon { width: 22px; height: 22px; flex-shrink: 0; }
+    </style>
+</head>
+<body>
+    <h1>Nil Viola</h1>
+    <div class="slogan">Sertanejo Gospel</div>
+
+    <a href="https://open.spotify.com/intl-pt/artist/6yylUfu6eFugErm8OE9vh7" target="_blank" class="spotify">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.3c-.3.5-.8.7-1.3.4-3.5-2.1-7.9-2.6-13.1-1.4-.5.1-1-.3-1.1-.8-.1-.5.3-1 .8-1.1 5.7-1.3 10.6-.7 14.5 1.6.5.3.6.9.2 1.3zm1.5-3.4c-.4.6-1.1.8-1.7.5-4.2-2.6-10.6-3.4-15.6-1.8-.7.2-1.4-.2-1.6-.9-.2-.7.2-1.4.9-1.6 5.7-1.7 12.7-.8 17.5 2.2.6.4.8 1.1.5 1.6zm.1-3.6c-5-3-13.2-3.3-18-1.8-.8.2-1.7-.2-1.9-1-.2-.8.2-1.7 1-1.9 5.5-1.7 14.6-1.4 20.3 2.1.7.4.9 1.3.5 2-.4.7-1.3.9-1.9.6z"/>
+        </svg>
+        Ouvir no Spotify
+    </a>
+
+    <a href="https://music.youtube.com/channel/UCPpBU0oGU5tQWkRxGYvsWyA" target="_blank" class="youtube">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm0 19.1c-3.92 0-7.1-3.18-7.1-7.1s3.18-7.1 7.1-7.1 7.1 3.18 7.1 7.1-3.18 7.1-7.1 7.1zm0-13.3c-3.42 0-6.2 2.78-6.2 6.2s2.78 6.2 6.2 6.2 6.2-2.78 6.2-6.2-2.78-6.2-6.2-6.2zM9.64 15.57V8.43L15.82 12l-6.18 3.57z"/>
+        </svg>
+        YouTube Music
+    </a>
+
+    <a href="https://music.apple.com/us/artist/nil-viola/6773732131" target="_blank" class="apple">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        Apple Music
+    </a>
+</body>
+</html>
